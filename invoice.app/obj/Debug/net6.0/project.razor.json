@@ -16298,8 +16298,18 @@
   "RootNamespace": "invoice.app",
   "Documents": [
     {
+      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Account/Signin.cshtml",
+      "TargetPath": "Views\\Account\\Signin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Account/Signup.cshtml",
       "TargetPath": "Views\\Account\\Signup.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_SidebarPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_SidebarPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16318,6 +16328,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_DashboardLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_DashboardLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -16325,6 +16340,11 @@
     {
       "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_AuthLayout.cshtml",
       "TargetPath": "Views\\Shared\\_AuthLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_NavbarPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_NavbarPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16340,6 +16360,16 @@
     {
       "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/Created.cshtml",
+      "TargetPath": "Views\\Organization\\Created.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_NavlinkPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_NavlinkPartial.cshtml",
       "FileKind": "mvc"
     }
   ],

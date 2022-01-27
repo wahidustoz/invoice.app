@@ -1,0 +1,35 @@
+@model invoice.app.ViewModels.SigninViewModel
+@{
+    Layout = "_AuthLayout";
+}
+
+<form class="form-signin" method="post" asp-action="Signin" asp-controller="Account">
+    
+    <input hidden asp-for="ReturnUrl">
+    
+    <div class="text-center mb-4">
+        <img class="mb-4" src="~/icon-dark.svg" alt="" width="72"
+            height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Invoice App</h1>
+        <p>We <strong></strong></h4><code>invoice</code></strong> you.</p>
+    </div>
+
+
+    <div class="form-label-group">
+        <input asp-for="Email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="">
+        <label class="text-muted" asp-for="Email" for="inputEmail"></label>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-label-group">
+        <input asp-for="Password" type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <label class="text-muted" asp-for="Password" for="inputPassword"></label>
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="row mx-auto">
+        <button class="btn btn-lg btn-success" type="submit">Sign in</button>
+    </div>
+    <a class="d-block ms-auto text-end mt-3" asp-action="Signup" asp-controller="Account" asp-route-returnUrl="@Model.ReturnUrl">Sign up</a>
+    <p class="mt-5 mb-3 text-muted text-center">Ilmhub © @DateTimeOffset.Now.Year</p>
+</form>

@@ -63,32 +63,33 @@ public class Seed : BackgroundService
             }
         }
 
-        // var admin = await _userM.FindByEmailAsync("superadmin@ilmhub.uz");
-        // var organization = new Organization()
-        // {
-        //     Id = Guid.NewGuid(),
-        //     Name = "Ilmhub IT Schoool",
-        //     Phone = "998950126172",
-        //     Email = "ilmhub.uz@gmail.com",
-        //     Address = "Buyuk Ipak Yuli street, 254"
-        // };
+        var admin = await _userM.FindByEmailAsync("superadmin@ilmhub.uz");
+        var organization = new Organization()
+        {
+            Id = Guid.NewGuid(),
+            Name = "Ilmhub IT Schoool",
+            Phone = "998950126172",
+            Email = "ilmhub.uz@gmail.com",
+            Address = "Buyuk Ipak Yuli street, 254",
+            OwnerId = admin.Id
+        };
 
-        // var employeeOrganization = new EmployeeOrganization()
-        // {
-        //     EmployeeId = admin.Id,
-        //     OrganizationId = organization.Id
-        // };
+        var employeeOrganization = new EmployeeOrganization()
+        {
+            EmployeeId = admin.Id,
+            OrganizationId = organization.Id
+        };
 
-        // var joinCode = new JoinCode()
-        // {
-        //     ForEmail = "wakhid2802@gmail.com",
-        //     CreatorId = admin.Id,
-        //     OrganizationId = organization.Id
-        // };
+        var joinCode = new JoinCode()
+        {
+            ForEmail = "wakhid2802@gmail.com",
+            CreatorId = admin.Id,
+            OrganizationId = organization.Id
+        };
 
-        // await ctx.Organizations.AddAsync(organization);
-        // await ctx.EmployeeOrganizations.AddAsync(employeeOrganization);
-        // await ctx.JoinCodes.AddAsync(joinCode);
-        // await ctx.SaveChangesAsync();
+        await ctx.Organizations.AddAsync(organization);
+        await ctx.EmployeeOrganizations.AddAsync(employeeOrganization);
+        await ctx.JoinCodes.AddAsync(joinCode);
+        await ctx.SaveChangesAsync();
     }
 }

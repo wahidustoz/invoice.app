@@ -32,7 +32,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHostedService<Seed>();
+// builder.Services.AddHostedService<Seed>();
 
 var app = builder.Build();
 

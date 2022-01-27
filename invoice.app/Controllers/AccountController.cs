@@ -112,4 +112,45 @@ public class AccountController : Controller
     {
         return View(new SigninViewModel() { ReturnUrl = returnUrl });
     }
+
+     [HttpPost]
+    public async Task<IActionResult> Signin(SigninViewModel model)
+    {
+        if(!ModelState.IsValid)
+        {
+            return View(model);
+        }
+
+        var user = _userManager.Users.FirstOrDefault(u => u.Email == model.Email);
+        if(user == default)
+        {
+            ModelState.AddModelError("Password", "Email yoki parol noto'g'ri kiritilgan.");
+            return View(model);
+        }
+
+        var result = await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
+        if(result.Succeeded)
+        {
+            return LocalRedirect(model.ReturnUrl ?? "/");
+        }
+
+        return BadRequest(result.IsNotAllowed);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Signout()
+    {
+        if(_signInManager.IsSignedIn(User))
+        {
+            await _signInManager.SignOutAsync();
+
+        }
+        return LocalRedirect("/");
+    }
+
+    [HttpGet]
+    public IActionResult AccessDenied(string returnUrl)
+    {
+        return View(new { ReturnUrl = returnUrl });
+    }
 }

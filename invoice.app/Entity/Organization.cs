@@ -13,7 +13,9 @@ public class Organization
     public string Email { get; set; }
 
     public string Address { get; set; }
-    
+
+    public Guid OwnerId { get; set; }
+
     public virtual ICollection<EmployeeOrganization> EmployeeOrganizations { get; set; }
     
     public virtual ICollection<Invoice> Invoices { get; set; }
