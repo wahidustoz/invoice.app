@@ -1,0 +1,55 @@
+@model invoice.app.ViewModels.SignupViewModel
+@{
+    Layout = "_AuthLayout";
+}
+
+<form class="form-signin" method="post" asp-action="Signup" asp-controller="Account">
+    <input hidden asp-for="ReturnUrl">
+
+
+    <div class="text-center mb-4">
+        <img class="mb-4" src="~/icon-dark.svg" alt="" width="72"
+            height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Invoice App</h1>
+        <p>We <strong></strong></h4><code>invoice</code></strong> you.</p>
+    </div>
+
+    <input hidden asp-for="JoinCode" type="text" id="joinCode" class="form-control" placeholder="Fullname" required="" autofocus="true">
+    <span asp-validation-for="JoinCode" class="text-danger show mb-3"></span>
+
+    <div class="form-label-group">
+        <input asp-for="Fullname" type="text" id="inputName" class="form-control" placeholder="Fullname" required="" autofocus="true">
+        <label class="text-muted" asp-for="Fullname" for="inputName"></label>
+        <span asp-validation-for="Fullname" class="text-danger show"></span>
+    </div>
+
+
+    <div class="form-label-group">
+        <input asp-for="Email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="">
+        <label class="text-muted" asp-for="Email" for="inputEmail"></label>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-label-group">
+        <input asp-for="Phone" type="tel" id="inputPhone" class="form-control" placeholder="Phone" required="">
+        <label class="text-muted" asp-for="Phone" for="inputPhone"></label>
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+    <div class="form-label-group">
+        <input asp-for="Password" type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <label class="text-muted" asp-for="Password" for="inputPassword"></label>
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-label-group">
+        <input asp-for="ConfirmPassword" type="password" id="inputConfirmPassword"  class="form-control" placeholder="Password" required="">
+        <label class="text-muted" asp-for="ConfirmPassword" for="inputConfirmPassword"></label>
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+    
+    <div class="row mx-auto">
+        <button class="btn btn-lg btn-success" type="submit">Sign up</button>
+    </div>
+    <p class="mt-5 mb-3 text-muted text-center">Ilmhub © @DateTimeOffset.Now.Year</p>
+</form>
