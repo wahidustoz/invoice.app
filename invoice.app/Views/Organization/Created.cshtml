@@ -1,5 +1,5 @@
 @using invoice.app.Entity
-@model List<Organization>
+@model List<CreatedOrganizationViewModel>
 
 @{
     Layout = "_DashboardLayout";
@@ -18,13 +18,15 @@
         <div class="col-lg-6 py-2">
             <div class="card shadow-sm p-0 m-2">
                 <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     <h6 class="m-0 font-weight-bold text-primary">@org.Name</h6>
                     <div class="dropdown no-arrow">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink" style="">
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                        aria-labelledby="dropdownMenuLink" style="">
                             <div class="dropdown-header">Boshqaruv</div>
                             <a class="dropdown-item fw-bold text-primary" href="/organization/addmember?id=@org.Id">
                                 <i class="fas fa-user-plus"></i>&nbsp;&nbsp;A'zo qo'shish
@@ -43,7 +45,7 @@
                     </div>
                 </div>
                 <!-- Card Body -->
-                <div class="card-body">
+            <div class="card-body">
                     <div class="card border-bottom-primary mb-3">
                         <div class="card-body p-2 px-3">
                             <div class="row align-items-center">
@@ -54,10 +56,12 @@
                                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                         A'zolar soni
                                     </div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.EmployeeOrganizations.Count() ta</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.EmployeeOrganizationsCount
+                                        ta</div>
                                 </div>
                                 <div class="col-auto ms-auto">
-                                    <a href="/organization/addmember?id=@org.Id" class="link-primary"><i class="fas fa-plus text-primary"></i></a>
+                                    <a href="/organization/addmember?id=@org.Id" class="link-primary"><i
+                                        class="fas fa-plus text-primary"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -73,10 +77,11 @@
                                     <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                         Invoicelar
                                     </div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.Invoices.Count() ta</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.InvoicesCount ta</div>
                                 </div>
                                 <div class="col-auto ms-auto">
-                                    <a href="/organization/addmember?id=@org.Id" class="link-primary"><i class="fas fa-plus text-success"></i></a>
+                                    <a href="/organization/addmember?id=@org.Id" class="link-primary"><i
+                                        class="fas fa-plus text-success"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -92,10 +97,11 @@
                                     <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                         Kontaktlar
                                     </div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.Partners.Count() ta</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.Partners ta</div>
                                 </div>
                                 <div class="col-auto ms-auto">
-                                    <a href="/organization/addmember?id=@org.Id" class="link-primary"><i class="fas fa-plus text-info"></i></a>
+                                    <a href="/organization/addmember?id=@org.Id" class="link-primary"><i
+                                        class="fas fa-plus text-info"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -28,7 +28,16 @@ public class OrganizationController : Controller
         var user = await _userm.GetUserAsync(User);
         var orgs = await _ctx.Organizations.Where(o => o.OwnerId == user.Id).ToListAsync();
 
-        return View(orgs);
+        var organizations = orgs.Select(o => new CreatedOrganizationViewModel()
+        {
+            Id = o.Id,
+            Name = o.Name,
+            EmployeeOrganizationsCount = o.EmployeeOrganizations.Count(),
+            InvoicesCount = o.Invoices.Count(),
+            Partners = o.Partners.Count()
+        }).ToList();
+
+        return View(organizations);
     }
 
     [HttpGet]
@@ -37,7 +46,7 @@ public class OrganizationController : Controller
     [HttpPost]
     public async Task<IActionResult> Create(CreateOrganizationViewModel model)
     {
-        if(!ModelState.IsValid)
+        if (!ModelState.IsValid)
         {
             return View();
         }
@@ -60,7 +69,7 @@ public class OrganizationController : Controller
             EmployeeId = user.Id,
             OrganizationId = org.Id
         };
-        
+
         await _ctx.EmployeeOrganizations.AddAsync(empOrg);
 
         await _ctx.SaveChangesAsync();
@@ -74,16 +83,16 @@ public class OrganizationController : Controller
     [HttpPost]
     public async Task<IActionResult> AddMember(AddMemberViewModel model)
     {
-        if(!ModelState.IsValid)
+        if (!ModelState.IsValid)
         {
             return View();
         }
-        if(await _ctx.JoinCodes.AnyAsync(c => c.ForEmail == model.ForEmail))
+        if (await _ctx.JoinCodes.AnyAsync(c => c.ForEmail == model.ForEmail))
         {
             ModelState.AddModelError("ForEmail", "Bu emailga taklif jo'natilgan.");
             return View();
         }
-        if(await _ctx.Users.AnyAsync(u => u.Email == model.ForEmail))
+        if (await _ctx.Users.AnyAsync(u => u.Email == model.ForEmail))
         {
             ModelState.AddModelError("ForEmail", "Bu email allaqachon olingan.");
             return View();
