@@ -12,7 +12,7 @@ public class SignupViewModel
     public string Fullname { get; set; }
     
     [Required]
-    [RegularExpression(@"^[\+]?(998[-\s\.]?)([0-9]{2}[-\s\.]?)([0-9]{3}[-\s\.]?)([0-9]{2}[-\s\.]?)([0-9]{2}[-\s\.]?)$")]
+    [RegularExpression(@"^[\+]?(998[-\s\.]?)([0-9]{2}[-\s\.]?)([0-9]{3}[-\s\.]?)([0-9]{2}[-\s\.]?)([0-9]{2}[-\s\.]?)$", ErrorMessage = "Telefon raqam noto'g'ri formatda.")]
     public string Phone { get; set; }
     
     [Required]

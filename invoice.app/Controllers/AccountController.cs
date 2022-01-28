@@ -56,7 +56,7 @@ public class AccountController : Controller
             return View(model);
         }
 
-        if(model.JoinCode != null)
+        if(model.JoinCode != default(Guid))
         {
             var code = await _ctx.JoinCodes.FirstOrDefaultAsync(c => c.Code == model.JoinCode);
             if(code == null || code == default)
@@ -86,7 +86,7 @@ public class AccountController : Controller
             return StatusCode(500, JsonSerializer.Serialize(userResult.Errors));
         }
 
-        if(model.JoinCode != default)
+        if(model.JoinCode != default(Guid))
         {
             var code = await _ctx.JoinCodes.FirstOrDefaultAsync(c => c.Code == model.JoinCode);
 
