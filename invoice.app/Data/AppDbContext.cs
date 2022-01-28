@@ -81,7 +81,7 @@ public class AppDbContext : IdentityDbContext<
                 .IsRequired()
                 .OnDelete(DeleteBehavior.Cascade);
 
-            o.HasMany(org => org.Partners)
+            o.HasMany(org => org.Contacts)
                 .WithOne(p => p.Organization)
                 .HasForeignKey(p => p.OrganizationId)
                 .IsRequired()
