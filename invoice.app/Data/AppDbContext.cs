@@ -23,7 +23,7 @@ public class AppDbContext : IdentityDbContext<
 
     public DbSet<InvoiceItem> IvoiceItems { get; set; }
     
-    public DbSet<Partner> Partners { get; set; }
+    public DbSet<Contact> Contacts { get; set; }
 
     public DbSet<JoinCode> JoinCodes { get; set; }
     
@@ -81,7 +81,7 @@ public class AppDbContext : IdentityDbContext<
                 .IsRequired()
                 .OnDelete(DeleteBehavior.Cascade);
 
-            o.HasMany(org => org.Partners)
+            o.HasMany(org => org.Contacts)
                 .WithOne(p => p.Organization)
                 .HasForeignKey(p => p.OrganizationId)
                 .IsRequired()

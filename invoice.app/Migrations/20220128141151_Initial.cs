@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace invoice.app.Migrations
 {
-    public partial class initi : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -172,6 +172,27 @@ namespace invoice.app.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Contacts",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    OrganizationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Contacts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Contacts_Organizations_OrganizationId",
+                        column: x => x.OrganizationId,
+                        principalTable: "Organizations",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "EmployeeOrganizations",
                 columns: table => new
                 {
@@ -224,27 +245,6 @@ namespace invoice.app.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Partners",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    OrganizationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Partners", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Partners_Organizations_OrganizationId",
-                        column: x => x.OrganizationId,
-                        principalTable: "Organizations",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Invoices",
                 columns: table => new
                 {
@@ -272,16 +272,16 @@ namespace invoice.app.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.SetNull);
                     table.ForeignKey(
+                        name: "FK_Invoices_Contacts_BillToId",
+                        column: x => x.BillToId,
+                        principalTable: "Contacts",
+                        principalColumn: "Id");
+                    table.ForeignKey(
                         name: "FK_Invoices_Organizations_OrganizationId",
                         column: x => x.OrganizationId,
                         principalTable: "Organizations",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Invoices_Partners_BillToId",
-                        column: x => x.BillToId,
-                        principalTable: "Partners",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -347,6 +347,11 @@ namespace invoice.app.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Contacts_OrganizationId",
+                table: "Contacts",
+                column: "OrganizationId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_EmployeeOrganizations_OrganizationId",
                 table: "EmployeeOrganizations",
                 column: "OrganizationId");
@@ -381,11 +386,6 @@ namespace invoice.app.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_JoinCodes_OrganizationId",
                 table: "JoinCodes",
-                column: "OrganizationId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Partners_OrganizationId",
-                table: "Partners",
                 column: "OrganizationId");
         }
 
@@ -425,7 +425,7 @@ namespace invoice.app.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Partners");
+                name: "Contacts");
 
             migrationBuilder.DropTable(
                 name: "Organizations");
