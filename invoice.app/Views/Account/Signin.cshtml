@@ -30,6 +30,8 @@
     <div class="row mx-auto">
         <button class="btn btn-lg btn-success" type="submit">Sign in</button>
     </div>
-    <a class="d-block ms-auto text-end mt-3" asp-action="Signup" asp-controller="Account" asp-route-returnUrl="@Model.ReturnUrl">Sign up</a>
+    <div class="row mx-auto">
+        <a class="btn btn-lg btn-info my-2" type="submit" asp-action="Signup" asp-controller="Account" asp-route-returnUrl="@Model.ReturnUrl">Sign up</a>
+    </div>
     <p class="mt-5 mb-3 text-muted text-center">Ilmhub © @DateTimeOffset.Now.Year</p>
 </form>
