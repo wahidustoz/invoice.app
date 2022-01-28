@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/invoice.app.csproj",
+  "FilePath": "/home/abubakr/invoice.app/invoice.app/invoice.app.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,88 +16298,88 @@
   "RootNamespace": "invoice.app",
   "Documents": [
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Account/Signin.cshtml",
-      "TargetPath": "Views\\Account\\Signin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Account/Signup.cshtml",
-      "TargetPath": "Views\\Account\\Signup.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/Create.cshtml",
-      "TargetPath": "Views\\Organization\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_SidebarPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_SidebarPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/AddMember.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Organization/AddMember.cshtml",
       "TargetPath": "Views\\Organization\\AddMember.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_DashboardLayout.cshtml",
-      "TargetPath": "Views\\Shared\\_DashboardLayout.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/_ViewImports.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_AuthLayout.cshtml",
-      "TargetPath": "Views\\Shared\\_AuthLayout.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_NavbarPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_NavbarPartial.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Shared/_DashboardLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_DashboardLayout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Home/Privacy.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Account/Signin.cshtml",
+      "TargetPath": "Views\\Account\\Signin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_Layout.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Account/Signup.cshtml",
+      "TargetPath": "Views\\Account\\Signup.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Organization/Create.cshtml",
+      "TargetPath": "Views\\Organization\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Shared/_NavlinkPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_NavlinkPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/Created.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Shared/_AuthLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_AuthLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Shared/_SidebarPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_SidebarPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Organization/Created.cshtml",
       "TargetPath": "Views\\Organization\\Created.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_NavlinkPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_NavlinkPartial.cshtml",
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/Shared/_NavbarPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_NavbarPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/abubakr/invoice.app/invoice.app/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

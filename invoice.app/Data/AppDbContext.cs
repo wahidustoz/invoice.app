@@ -23,7 +23,7 @@ public class AppDbContext : IdentityDbContext<
 
     public DbSet<InvoiceItem> IvoiceItems { get; set; }
     
-    public DbSet<Partner> Partners { get; set; }
+    public DbSet<Contact> Partners { get; set; }
 
     public DbSet<JoinCode> JoinCodes { get; set; }
     
