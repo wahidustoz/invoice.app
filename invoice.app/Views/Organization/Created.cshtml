@@ -1,5 +1,4 @@
-@using invoice.app.Entity
-@model List<Organization>
+@model CreatedOrganizationsViewModel
 
 @{
     Layout = "_DashboardLayout";
@@ -13,7 +12,7 @@
 </div>
 
 <div class="row justify-content-evenly px-5">
-    @foreach (var org in Model)
+    @foreach (var org in Model.Organizations)
     {
         <div class="col-lg-6 py-2">
             <div class="card shadow-sm p-0 m-2">
@@ -54,7 +53,7 @@
                                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                         A'zolar soni
                                     </div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.EmployeeOrganizations.Count() ta</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.EmployeeOrganizationsCount ta</div>
                                 </div>
                                 <div class="col-auto ms-auto">
                                     <a href="/organization/addmember?id=@org.Id" class="link-primary"><i class="fas fa-plus text-primary"></i></a>
@@ -73,7 +72,7 @@
                                     <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                         Invoicelar
                                     </div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.Invoices.Count() ta</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.InvoicesCount ta</div>
                                 </div>
                                 <div class="col-auto ms-auto">
                                     <a href="/organization/addmember?id=@org.Id" class="link-primary"><i class="fas fa-plus text-success"></i></a>
@@ -92,7 +91,7 @@
                                     <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                         Kontaktlar
                                     </div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.Partners.Count() ta</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">@org.ContactsCount ta</div>
                                 </div>
                                 <div class="col-auto ms-auto">
                                     <a href="/organization/addmember?id=@org.Id" class="link-primary"><i class="fas fa-plus text-info"></i></a>
