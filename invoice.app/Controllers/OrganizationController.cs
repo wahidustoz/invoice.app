@@ -1,5 +1,6 @@
 using invoice.app.Data;
 using invoice.app.Entity;
+using invoice.app.Mappers;
 using invoice.app.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -27,8 +28,9 @@ public class OrganizationController : Controller
     {
         var user = await _userm.GetUserAsync(User);
         var orgs = await _ctx.Organizations.Where(o => o.OwnerId == user.Id).ToListAsync();
-
-        return View(orgs);
+        
+        var model = orgs.ToModel();
+        return View(model);
     }
 
     [HttpGet]
