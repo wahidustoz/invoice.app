@@ -134,6 +134,31 @@ namespace invoice.app.Migrations
                     b.ToTable("AspNetUserRoles", (string)null);
                 });
 
+            modelBuilder.Entity("invoice.app.Entity.Contact", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("OrganizationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrganizationId");
+
+                    b.ToTable("Contacts");
+                });
+
             modelBuilder.Entity("invoice.app.Entity.EmployeeOrganization", b =>
                 {
                     b.Property<Guid>("EmployeeId")
@@ -290,31 +315,6 @@ namespace invoice.app.Migrations
                     b.ToTable("Organizations");
                 });
 
-            modelBuilder.Entity("invoice.app.Entity.Partner", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("OrganizationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Phone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrganizationId");
-
-                    b.ToTable("Partners");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
                     b.Property<int>("Id")
@@ -422,6 +422,17 @@ namespace invoice.app.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("invoice.app.Entity.Contact", b =>
+                {
+                    b.HasOne("invoice.app.Entity.Organization", "Organization")
+                        .WithMany("Partners")
+                        .HasForeignKey("OrganizationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Organization");
+                });
+
             modelBuilder.Entity("invoice.app.Entity.EmployeeOrganization", b =>
                 {
                     b.HasOne("invoice.app.Entity.AppUser", "Employee")
@@ -443,7 +454,7 @@ namespace invoice.app.Migrations
 
             modelBuilder.Entity("invoice.app.Entity.Invoice", b =>
                 {
-                    b.HasOne("invoice.app.Entity.Partner", "BillTo")
+                    b.HasOne("invoice.app.Entity.Contact", "BillTo")
                         .WithMany()
                         .HasForeignKey("BillToId");
 
@@ -491,17 +502,6 @@ namespace invoice.app.Migrations
                         .IsRequired();
 
                     b.Navigation("Creator");
-
-                    b.Navigation("Organization");
-                });
-
-            modelBuilder.Entity("invoice.app.Entity.Partner", b =>
-                {
-                    b.HasOne("invoice.app.Entity.Organization", "Organization")
-                        .WithMany("Partners")
-                        .HasForeignKey("OrganizationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
 
                     b.Navigation("Organization");
                 });

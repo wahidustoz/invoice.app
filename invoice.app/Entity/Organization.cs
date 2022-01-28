@@ -20,5 +20,5 @@ public class Organization
     
     public virtual ICollection<Invoice> Invoices { get; set; }
 
-    public virtual ICollection<Partner> Partners { get; set; }
+    public virtual ICollection<Contact> Cotacts { get; set; }
 }

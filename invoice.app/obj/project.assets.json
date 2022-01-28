@@ -6931,19 +6931,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/wahid/.nuget/packages/": {}
+    "/home/alisher/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/wahid/Developer/vscode/invoice/invoice.app/invoice.app.csproj",
+      "projectUniqueName": "/home/alisher/invoice.app/invoice.app/invoice.app.csproj",
       "projectName": "invoice.app",
-      "projectPath": "/Users/wahid/Developer/vscode/invoice/invoice.app/invoice.app.csproj",
-      "packagesPath": "/Users/wahid/.nuget/packages/",
-      "outputPath": "/Users/wahid/Developer/vscode/invoice/invoice.app/obj/",
+      "projectPath": "/home/alisher/invoice.app/invoice.app/invoice.app.csproj",
+      "packagesPath": "/home/alisher/.nuget/packages/",
+      "outputPath": "/home/alisher/invoice.app/invoice.app/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/wahid/.nuget/NuGet/NuGet.Config"
+        "/home/alisher/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -7008,7 +7008,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
