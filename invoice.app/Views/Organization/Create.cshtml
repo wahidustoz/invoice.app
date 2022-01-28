@@ -1,0 +1,41 @@
+@model CreateOrganizationViewModel
+
+@{
+    Layout = "_DashboardLayout";
+}
+
+<div class="row px-5">
+    <div class="card shadow-sm mx-auto border-bottom-success col-lg-6 mx-auto mb-5">
+        <form class="card-body" asp-action="Create" asp-controller="Organization" method="post">
+            <h4 class="card-title fw-bold text-dark">Korxona yaratish</h4>
+            <div class="mb-3">
+                <label asp-for="Name" for="name" class="form-label"></label>
+                <input required asp-for="Name" type="text" class="form-control" id="name" placeholder="ABC MChJ">
+                <span asp-validation-for="Name" class="text-danger show"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Email" for="email" class="form-label"></label>
+                <input required asp-for="Email" type="email" class="form-control" id="email" placeholder="email@korxona.uz">
+                <span asp-validation-for="Email" class="text-danger show"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Phone" for="phone" class="form-label"></label>
+                <input required asp-for="Phone" type="tel" class="form-control" id="phone" placeholder="+998950126172">
+                <span asp-validation-for="Phone" class="text-danger show"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Address" for="address" class="form-label"></label>
+                <input required asp-for="Address" type="address" class="form-control" id="address" placeholder="Toshkent, Mirzo Ulug'bek tumani, Buyuk Ipak yo'li ko'chasi 254-uy">
+                <span asp-validation-for="Address" class="text-danger show"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" for="description" class="form-label"></label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+                <span asp-validation-for="Description" class="text-danger show"></span>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Yaratish</button>
+            </div>
+        </form>
+    </div>
+</div>

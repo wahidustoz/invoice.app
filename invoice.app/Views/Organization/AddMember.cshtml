@@ -1,0 +1,22 @@
+@model AddMemberViewModel
+
+@{
+    Layout = "_DashboardLayout";
+}
+
+<div class="row px-5">
+    <div class="card shadow-sm mx-auto border-bottom-warning col-lg-6 mx-auto mb-5">
+        <form class="card-body" asp-action="AddMember" asp-controller="Organization" method="post">
+            <input asp-for="OrganizationId" hidden>
+            <h4 class="card-title fw-bold text-dark">A'zo qo'shish</h4>
+            <div class="mb-3">
+                <label asp-for="ForEmail" for="foremail" class="form-label"></label>
+                <input required asp-for="ForEmail" type="foremail" class="form-control" id="email" placeholder="email@korxona.uz">
+                <span asp-validation-for="ForEmail" class="text-danger show"></span>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Qo'shish</button>
+            </div>
+        </form>
+    </div>
+</div>

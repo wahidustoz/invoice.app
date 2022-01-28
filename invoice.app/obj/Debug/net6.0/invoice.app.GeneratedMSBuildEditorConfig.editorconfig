@@ -31,6 +31,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/AddMember.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JnYW5pemF0aW9uL0FkZE1lbWJlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JnYW5pemF0aW9uL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/Created.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JnYW5pemF0aW9uL0NyZWF0ZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

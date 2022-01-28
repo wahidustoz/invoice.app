@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/Create.cshtml",
+      "TargetPath": "Views\\Organization\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_SidebarPartial.cshtml",
       "TargetPath": "Views\\Shared\\_SidebarPartial.cshtml",
       "FileKind": "mvc"
@@ -16325,6 +16330,11 @@
     {
       "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/AddMember.cshtml",
+      "TargetPath": "Views\\Organization\\AddMember.cshtml",
       "FileKind": "mvc"
     },
     {

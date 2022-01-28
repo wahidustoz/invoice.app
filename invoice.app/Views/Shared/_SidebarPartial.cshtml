@@ -21,23 +21,35 @@
     <hr class="sidebar-divider">
 
     <!-- Heading -->
-    <div class="sidebar-heading">
+    @* <div class="sidebar-heading">
         Interface
-    </div>
+    </div> *@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInvoice" aria-expanded="true"
+            aria-controls="collapseTwo">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <strong>Inyoslar</strong>
+        </a>
+        <div id="collapseInvoice" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-light py-2 collapse-inner rounded">
+                <a class="collapse-item" href="/invoice/all">Hammasi</a>
+                <a class="collapse-item" href="/invoice/create">Yozish</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
             aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Organizations</span>
+            <i class="fas fa-building"></i>
+            <strong>Korxonalar</strong>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                @* <h6 class="collapse-header">Created</h6> *@
-                <a class="collapse-item" href="/organization/created">Created</a>
-                @* <h6 class="collapse-header">Joined</h6> *@
-                <a class="collapse-item" href="/organization/joined">Joined</a>
+            <div class="bg-light py-2 collapse-inner rounded">
+                <a class="collapse-item" href="/organization/created">Menikilar</a>
+                <a class="collapse-item" href="/organization/joined">Qo'shilganlarim</a>
             </div>
         </div>
     </li>
