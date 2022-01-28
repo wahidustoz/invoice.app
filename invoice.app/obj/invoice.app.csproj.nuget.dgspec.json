@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/wahid/Developer/vscode/invoice/invoice.app/invoice.app.csproj": {}
+    "C:\\Users\\user\\Documents\\Developer\\invoice.app\\invoice.app\\invoice.app.csproj": {}
   },
   "projects": {
-    "/Users/wahid/Developer/vscode/invoice/invoice.app/invoice.app.csproj": {
+    "C:\\Users\\user\\Documents\\Developer\\invoice.app\\invoice.app\\invoice.app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/wahid/Developer/vscode/invoice/invoice.app/invoice.app.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Developer\\invoice.app\\invoice.app\\invoice.app.csproj",
         "projectName": "invoice.app",
-        "projectPath": "/Users/wahid/Developer/vscode/invoice/invoice.app/invoice.app.csproj",
-        "packagesPath": "/Users/wahid/.nuget/packages/",
-        "outputPath": "/Users/wahid/Developer/vscode/invoice/invoice.app/obj/",
+        "projectPath": "C:\\Users\\user\\Documents\\Developer\\invoice.app\\invoice.app\\invoice.app.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\Developer\\invoice.app\\invoice.app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/wahid/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

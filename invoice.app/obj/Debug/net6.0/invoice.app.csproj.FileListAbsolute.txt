@@ -65,3 +65,14 @@
 /Users/wahid/Developer/vscode/invoice/invoice.app/obj/Debug/net6.0/ref/invoice.app.dll
 /Users/wahid/Developer/vscode/invoice/invoice.app/obj/Debug/net6.0/invoice.app.pdb
 /Users/wahid/Developer/vscode/invoice/invoice.app/obj/Debug/net6.0/invoice.app.genruntimeconfig.cache
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.AssemblyInfo.cs
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.RazorAssemblyInfo.cache
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.RazorAssemblyInfo.cs
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.dll
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\ref\invoice.app.dll
+C:\Users\user\Documents\Developer\invoice.app\invoice.app\obj\Debug\net6.0\invoice.app.pdb
