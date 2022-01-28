@@ -30,7 +30,7 @@ public class Invoice
     public Guid? CreatorId { get; set; }
     public virtual AppUser Creator { get; set; }
     
-    public virtual Partner BillTo { get; set; }
+    public virtual Contact BillTo { get; set; }
 
     public virtual ICollection<InvoiceItem> Items { get; set; }
 }
