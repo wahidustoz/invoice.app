@@ -425,7 +425,7 @@ namespace invoice.app.Migrations
             modelBuilder.Entity("invoice.app.Entity.Contact", b =>
                 {
                     b.HasOne("invoice.app.Entity.Organization", "Organization")
-                        .WithMany("Partners")
+                        .WithMany("Contacts")
                         .HasForeignKey("OrganizationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -563,11 +563,11 @@ namespace invoice.app.Migrations
 
             modelBuilder.Entity("invoice.app.Entity.Organization", b =>
                 {
+                    b.Navigation("Contacts");
+
                     b.Navigation("EmployeeOrganizations");
 
                     b.Navigation("Invoices");
-
-                    b.Navigation("Partners");
                 });
 #pragma warning restore 612, 618
         }
