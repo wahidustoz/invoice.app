@@ -1,0 +1,17 @@
+/Users/wahid/Developer/vscode/invoice/emailsender/bin/Debug/net6.0/emailsender
+/Users/wahid/Developer/vscode/invoice/emailsender/bin/Debug/net6.0/emailsender.deps.json
+/Users/wahid/Developer/vscode/invoice/emailsender/bin/Debug/net6.0/emailsender.runtimeconfig.json
+/Users/wahid/Developer/vscode/invoice/emailsender/bin/Debug/net6.0/emailsender.dll
+/Users/wahid/Developer/vscode/invoice/emailsender/bin/Debug/net6.0/ref/emailsender.dll
+/Users/wahid/Developer/vscode/invoice/emailsender/bin/Debug/net6.0/emailsender.pdb
+/Users/wahid/Developer/vscode/invoice/emailsender/bin/Debug/net6.0/RabbitMQ.Client.dll
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/emailsender.csproj.AssemblyReference.cache
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/emailsender.GeneratedMSBuildEditorConfig.editorconfig
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/emailsender.AssemblyInfoInputs.cache
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/emailsender.AssemblyInfo.cs
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/emailsender.csproj.CoreCompileInputs.cache
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/emailsender.csproj.CopyComplete
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/emailsender.dll
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/ref/emailsender.dll
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/emailsender.pdb
+/Users/wahid/Developer/vscode/invoice/emailsender/obj/Debug/net6.0/emailsender.genruntimeconfig.cache

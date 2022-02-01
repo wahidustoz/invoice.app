@@ -1,5 +1,6 @@
 using invoice.app.Data;
 using invoice.app.Entity;
+using invoice.app.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,7 +33,8 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHostedService<Seed>();
+// builder.Services.AddHostedService<Seed>();
+builder.Services.AddTransient<QueueClientService>();
 
 var app = builder.Build();
 

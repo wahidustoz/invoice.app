@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hyRIDuf+tx0jpd32XU01NDZMDVTijlm2c3m5iHwKWsks/OkZcSd5EaF+VADlraggcFr1UdSoDQOGyAk6kWcH4A==",
+  "success": true,
+  "projectFilePath": "/Users/wahid/Developer/vscode/invoice/emailsender/emailsender.csproj",
+  "expectedPackageFiles": [
+    "/Users/wahid/.nuget/packages/rabbitmq.client/6.2.2/rabbitmq.client.6.2.2.nupkg.sha512",
+    "/Users/wahid/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/wahid/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

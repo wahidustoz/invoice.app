@@ -27,6 +27,11 @@ public class OrganizationController : Controller
     public async Task<IActionResult> Created()
     {
         var user = await _userm.GetUserAsync(User);
+        if(user == null)
+        {
+            return Unauthorized();
+        }
+
         var orgs = await _ctx.Organizations.Where(o => o.OwnerId == user.Id).ToListAsync();
         
         var model = orgs.ToModel();
@@ -34,9 +39,20 @@ public class OrganizationController : Controller
     }
 
     [HttpGet]
-    public IActionResult Joined()
+    public async Task<IActionResult> Joined()
     {
-        return View();
+        var user = await _userm.GetUserAsync(User);
+        if(user == null)
+        {
+            return Unauthorized();
+        }
+        
+        var model = user.EmployeeOrganizations
+            .Select(org => org.Organization)
+            .Where(org => org.OwnerId != user.Id)
+            .ToList().ToModel();
+        
+        return View(model);
     }
     
 
@@ -87,15 +103,21 @@ public class OrganizationController : Controller
         {
             return View();
         }
+
         if(await _ctx.JoinCodes.AnyAsync(c => c.ForEmail == model.ForEmail))
         {
             ModelState.AddModelError("ForEmail", "Bu emailga taklif jo'natilgan.");
             return View();
         }
-        if(await _ctx.Users.AnyAsync(u => u.Email == model.ForEmail))
+
+        if(!await _ctx.Users.AnyAsync(u => u.Email == model.ForEmail))
         {
             ModelState.AddModelError("ForEmail", "Bu email allaqachon olingan.");
             return View();
+        }
+        else
+        {
+            // send invitation email
         }
 
         var user = await _userm.GetUserAsync(User);

@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = invoice.app
+build_property.RootNamespace = invoice.app
+build_property.ProjectDir = /Users/wahid/Developer/vscode/invoice/invoice.app/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/wahid/Developer/vscode/invoice/invoice.app
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Account/Signin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9TaWduaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Account/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9TaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/AddMember.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JnYW5pemF0aW9uL0FkZE1lbWJlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JnYW5pemF0aW9uL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/Created.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JnYW5pemF0aW9uL0NyZWF0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Organization/Joined.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JnYW5pemF0aW9uL0pvaW5lZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_AuthLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BdXRoTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_DashboardLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19EYXNoYm9hcmRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_NavlinkPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19OYXZsaW5rUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_SidebarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TaWRlYmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/wahid/Developer/vscode/invoice/invoice.app/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nizxo2r85p
