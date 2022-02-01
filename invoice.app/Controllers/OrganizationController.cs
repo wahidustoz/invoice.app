@@ -32,6 +32,13 @@ public class OrganizationController : Controller
     }
 
     [HttpGet]
+    public IActionResult Joined()
+    {
+        return View();
+    }
+    
+
+    [HttpGet]
     public IActionResult Create() => View();
 
     [HttpPost]
